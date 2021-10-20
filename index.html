@@ -22,41 +22,43 @@
         <table>
 
         <tr>
-            <td>  <button class="botao"  > + </button>   </td>
-            <td>  <button class="botao" > - </button>   </td>
-            <td>  <button class="botao" > / </button>   </td>
-            <td>  <button class="botao"> * </button>   </td>
-            <td>  <button class="botao"> % </button>   </td>
-            <td>  <button class="botao"> √ </button>   </td>        
+            <td>  <button class="botao"  onclick = "operacao(1)" > + </button>   </td>
+            <td>  <button class="botao"  onclick = "operacao(2)" > - </button>   </td>
+            <td>  <button class="botao"  onclick = "operacao(3)" > / </button>   </td>
+            <td>  <button class="botao"  onclick = "operacao(4)" > * </button>   </td>
+            <td>  <button class="botao"  onclick = "operacao(5)" > % </button>   </td>
+            <td>  <button class="botao"  onclick = "operacao(6)" > √ </button>   </td>        
         </tr>        
 
         <tr>
-            <td colspan="2">  <button class="botaoGrande"> 7 </button> </td>
-            <td colspan="2" >  <button class="botaoGrande"> 8 </button>   </td>
-            <td colspan="2" >  <button class="botaoGrande"> 9 </button>   </td>
+            <td colspan="2">  <button class="botaoGrande"  id = '7' onclick = "adicionarNUM(7)"> 7 </button></td>
+            <td colspan="2">  <button class="botaoGrande"  id = '8' onclick = "adicionarNUM(8)"> 8 </button></td>
+            <td colspan="2">  <button class="botaoGrande"  id = '9' onclick = "adicionarNUM(9)"> 9 </button></td>
          </tr>
         
         <tr>
-            <td colspan="2" >  <button class="botaoGrande"> 4 </button>   </td>
-            <td colspan="2" >  <button class="botaoGrande"> 5 </button>   </td>
-            <td colspan="2">  <button class="botaoGrande"> 6 </button>   </td>
+            <td colspan="2"> <button class="botaoGrande" id = '4' onclick = "adicionarNUM(4)" > 4 </button> </td>
+            <td colspan="2"> <button class="botaoGrande" id = '5' onclick = "adicionarNUM(5)" > 5 </button> </td>
+            <td colspan="2"> <button class="botaoGrande" id = '6' onclick = "adicionarNUM(6)" > 6 </button> </td>
         </tr>
 
         <tr>
-            <td colspan="2" >  <button class="botaoGrande"> 1 </button>   </td>
-            <td colspan="2">  <button class="botaoGrande"> 2 </button>   </td>
-            <td colspan="2">  <button class="botaoGrande"> 3 </button>   </td>
+            <td colspan="2"> <button class="botaoGrande" id = '1' onclick = "adicionarNUM(1)"> 1 </button></td>
+            <td colspan="2"> <button class="botaoGrande" id = '2' onclick = "adicionarNUM(2)"> 2 </button></td>
+            <td colspan="2"> <button class="botaoGrande" id = '3' onclick = "adicionarNUM(3)"> 3 </button></td>
         </tr>
 
         <tr>
-            <td colspan="2">  <button class="botaoGrande"> 0 </button>   </td>
-            <td colspan="2">  <button class="botaoGrande"> CE </button>   </td>
-            <td colspan="2">  <button class="botaoGrande"> = </button>   </td>
+            <td colspan="2">  <button class="botaoGrande" id = '0' onclick = "adicionarNUM(0)" > 0 </button>   </td>
+            <td colspan="2">  <button class="botaoGrande" onclick="limpar()"  > CE </button>   </td>
+            <td colspan="2">  <button class="botaoGrande" onclick="resultado()"   > = </button>   </td>
         </tr>
 
         </table>
 
     </div>
+
+       <script src = "function.js" >  </script> 
 
 </body>
 
