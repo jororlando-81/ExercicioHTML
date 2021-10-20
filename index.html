@@ -1,150 +1,63 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
 
-    <link rel="stylesheet" href="CSS/formulario.css">   
-
-    <title>form</title>
-
-
+    <link rel="stylesheet" href="CSS/teste.css" />
 
 </head>
 
-
 <body>
+   
+    <div  class = "calculadora"> 
 
-    <div>
+        <input type="text" id="tela" name="tela" placeholder="Digite os números"/>
+ 
+        <table>
 
-    <h1>English Course Application Form </h1>
+        <tr>
+            <td>  <button class="botao"  > + </button>   </td>
+            <td>  <button class="botao" > - </button>   </td>
+            <td>  <button class="botao" > / </button>   </td>
+            <td>  <button class="botao"> * </button>   </td>
+            <td>  <button class="botao"> % </button>   </td>
+            <td>  <button class="botao"> √ </button>   </td>        
+        </tr>        
 
-    <br>
+        <tr>
+            <td colspan="2">  <button class="botaoGrande"> 7 </button> </td>
+            <td colspan="2" >  <button class="botaoGrande"> 8 </button>   </td>
+            <td colspan="2" >  <button class="botaoGrande"> 9 </button>   </td>
+         </tr>
+        
+        <tr>
+            <td colspan="2" >  <button class="botaoGrande"> 4 </button>   </td>
+            <td colspan="2" >  <button class="botaoGrande"> 5 </button>   </td>
+            <td colspan="2">  <button class="botaoGrande"> 6 </button>   </td>
+        </tr>
 
-    <p> Fill in the form bellow </p>
+        <tr>
+            <td colspan="2" >  <button class="botaoGrande"> 1 </button>   </td>
+            <td colspan="2">  <button class="botaoGrande"> 2 </button>   </td>
+            <td colspan="2">  <button class="botaoGrande"> 3 </button>   </td>
+        </tr>
 
-    <br>
+        <tr>
+            <td colspan="2">  <button class="botaoGrande"> 0 </button>   </td>
+            <td colspan="2">  <button class="botaoGrande"> CE </button>   </td>
+            <td colspan="2">  <button class="botaoGrande"> = </button>   </td>
+        </tr>
+
+        </table>
 
     </div>
-    
-    
-    <form>
-     
-        <fieldset class = "fiel" > 
-        
-        <div  class = "c"  >   
-
-        <label for="name"> <strong>Name:</strong> </label>
-        <input type="text" id="name" name="name" required >
-
-        </div>    
-
-        <div class = "c"  >
-
-        <label for="lastname"> <strong>Lastname:</strong> </label>
-        <input type="text" id="lastname" Sobrename="lastname" required  >
-
-        </div>    
-
-        </fieldset>
-
-        <div class = "c"   >
-
-            <label for="email"> <strong> E-mail: </strong> </label>
-            <input type="email" id="email" name="email" required >
-
-        </div>
-        
-        
-        <div class = "c"   >
-            
-            <label for="password"> <strong> Password </strong> </label>
-            <input type="password" id="password" name="password" required>
-
-        </div>
-
-        
-        <label for="sex"> <strong> Sex: </strong>  </label>
-            
-        <div id ="check" >  
-        
-            <input type="radio" id="male" name="sex" value="male">
-            <label for="male">Male</label>
-        
-            <input type="radio" id="female" name="sex" value="female">
-            <label for="female">Female</label>
-
-        </div>
-
-        <br>
-
-        <div class = "c"   >
-
-            <br>
-
-            <label for="marital status"> <strong> Marital status: </strong>  </label>
-            
-            <br>
-
-            <select id = "marital status" >
-
-            <option> Single </option>
-            <option> married </option>
-            <option> divorced </option>
-            <option> separated </option>
-            <option> widowed </option>    
-            </select>
-
-        </div>
-        
-        <br>
-
-        <div>
-           
-            <label for="quantity">  <strong>How many days would you like to study, it shouldn´t exceed 3 days</strong>  </label>
-            <input type="number" id="quantity" name="quantity" min="1" max="3">
-
-
-        </div>
-       
-       
-        <fieldset class = "fiel" >
-
-        <div  id = "check"   >
-            
-            <label>  <strong> Tick if you would like to learn others languages: </strong>  </label>><br><br>
-
-              <input type="checkbox" id="language1" name="language1" value="Spanish">
-              <label for="language1">Spanish</label>
-             
-              <input type="checkbox" id="language2" name="language2" value="Portuguese">
-              <label for="language2">Portuguese</label>
-      
-              <input type="checkbox" id="language3" name="language3" value="French">
-              <label for="language3">French</label>
-
-
-        </div>
-
-    </fieldset>
-
-    <div>
-        <br>
-        <label>  <strong> Tell me about yourself:  </strong> </label> <br><br>
-        <textarea row="6" style="width: 26em" id="yourself" name ="yourself"></textarea>
-    </div>
-
-    <br><br>
-
-    <button class="botao" type="submit" >  <strong> Submit </strong>  </button> 
-
-    </form>
 
 </body>
-
 
 </html>
